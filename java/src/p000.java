@@ -5,8 +5,11 @@
 public class p000 {
 
     public static String sumOfOddSquaresUntil935k(){
-        //Had to use long instead of int since the result was a massive number
+        //Had to use long instead of int since the result was a massive number.
+        //This was more of a mathematic brainstorm than really anything else.
         long oddSqrs = 953000/2;
+
+        //Formula for the summ of odd square numbers.
         long sum = (oddSqrs*(2*oddSqrs+1)*(2*oddSqrs-1))/3;
         return String.valueOf(sum);
     }
